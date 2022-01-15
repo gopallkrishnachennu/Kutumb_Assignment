@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="5dp">
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Trending"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            >
+
+        </TextView>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignEnd="@+id/heading"
+            android:src="@drawable/option"
+
+            >
+
+        </ImageView>
+    </RelativeLayout>
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/shimmer"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/shimmer"/>
+            <include layout="@layout/shimmer"/>
+            <include layout="@layout/shimmer"/>
+            <include layout="@layout/shimmer"/>
+            <include layout="@layout/shimmer"/>
+            <include layout="@layout/shimmer"/>
+            <include layout="@layout/shimmer"/>
+            <include layout="@layout/shimmer"/>
+            <include layout="@layout/shimmer"/>
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:layout_width="match_parent"
+    android:id="@+id/swipe"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/parent"/>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

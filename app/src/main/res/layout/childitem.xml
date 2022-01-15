@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="5dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/image"
+                    android:layout_gravity="center"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:id="@+id/username"
+                        android:text="Username">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="20dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/repositoryname"
+                        android:text="Repository Name">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="90dp"
+               android:orientation="horizontal"
+               android:id="@+id/expand"
+               android:layout_weight="3"
+               >
+               <View
+
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:maxLines="4"
+                   android:textColor="@color/black"
+                   android:layout_weight="2.1"
+                   >
+               </View>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="0.9"
+                   android:weightSum="3"
+                   android:orientation="vertical">
+                   <TextView
+                       android:layout_weight="1"
+                       android:id="@+id/description"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:maxLines="3"
+                       android:textColor="@color/black">
+
+                   </TextView>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="horizontal"
+                       android:weightSum="3"
+                       android:layout_weight="2">
+                       <LinearLayout
+                           android:layout_weight="1"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:orientation="horizontal">
+                           <ImageView
+                               android:layout_width="20dp"
+                               android:layout_height="30dp"
+                               android:src="@drawable/circle2"
+                               >
+
+                           </ImageView>
+
+                           <TextView
+                               android:layout_gravity="center_vertical"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:id="@+id/tlanguage"
+                               android:text="Python">
+
+                           </TextView>
+
+
+                       </LinearLayout>
+                       <LinearLayout
+                           android:layout_weight="1"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:orientation="horizontal">
+                           <ImageView
+                               android:layout_width="30dp"
+                               android:layout_height="30dp"
+                               android:src="@drawable/star"
+                               >
+
+                           </ImageView>
+                           <TextView
+                               android:layout_gravity="center_vertical"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:id="@+id/tstar"
+                               android:text="2022">
+
+                           </TextView>
+
+
+                       </LinearLayout>
+                       <LinearLayout
+                           android:layout_weight="1"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:orientation="horizontal">
+                           <ImageView
+                               android:layout_width="30dp"
+                               android:layout_height="30dp"
+                               android:src="@drawable/fork"
+                               >
+
+                           </ImageView>
+                           <TextView
+                               android:layout_gravity="center_vertical"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:id="@+id/tfork"
+                               android:text="2021">
+
+                           </TextView>
+                       </LinearLayout>
+
+                   </LinearLayout>
+
+
+               </LinearLayout>
+
+
+           </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
