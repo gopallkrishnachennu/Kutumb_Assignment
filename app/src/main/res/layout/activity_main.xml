@@ -61,6 +61,6 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/parent"/>
+        android:id="@+id/parent" />
 </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 </LinearLayout>
